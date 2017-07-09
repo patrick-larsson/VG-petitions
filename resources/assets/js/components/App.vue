@@ -11,7 +11,6 @@
 <script>
 const layouts = {
   _app: require('../layouts/app.vue'),
-  _default: require('../layouts/default.vue')
 }
 
 export default {

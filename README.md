@@ -1,21 +1,15 @@
-# Laravel-Vue SPA Starter [WIP]
+# Petition app
 
-> A Laravel-Vue SPA starter project template.
+Forked from 
+https://github.com/cretueusebiu/laravel-vue-spa
 
-## Features
-
-- Laravel 5.4 + Vue + Vue Router + Vuex
-- Pages with custom layouts 
-- Examples for login, register and password reset
-- Integration with [vform](https://github.com/cretueusebiu/vform)
-- Authentication with [JWT](https://github.com/tymondesigns/jwt-auth)
-- Webpack with [laravel-mix](https://github.com/JeffreyWay/laravel-mix)
-- SVG icons with [svg-sprite-loader](https://github.com/kisenka/svg-sprite-loader)
+> A very small experimental Laravel-Vue petition app with limited functionality,
+basically a user is only able to add their name to already created petitions.
 
 ## Installation
 
-- `git clone https://github.com/cretueusebiu/laravel-vue-spa.git`
-- `cd laravel-vue-spa`
+- `git clone https://github.com/patrick-larsson/VG-petitions.git`
+- `cd VG-petitions`
 - `cp .env.example .env`
 - `composer install`
 - `php artisan key:generate`
@@ -25,6 +19,11 @@
 - `npm install` / `yarn`
 
 ## Usage
+#### Login
+``` 
+Username: admin
+Password: admin
+```
 
 #### Development
 
