@@ -19,7 +19,8 @@
     "vue-meta": "^0.5.3",
     "vue-router": "^2.3.0",
     "vuex": "^2.2.1",
-    "vuex-router-sync": "^4.1.2"
+    "vuex-router-sync": "^4.1.2",
+    "yarn": "^0.27.5"
   },
   "devDependencies": {
     "babel-plugin-transform-async-to-generator": "^6.22.0",

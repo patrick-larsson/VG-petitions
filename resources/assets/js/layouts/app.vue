@@ -11,8 +11,8 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <router-link :to="{ name: 'welcome' }" class="navbar-brand">
-          Laravel
+        <router-link :to="{ name: 'home' }" class="navbar-brand">
+          {{ title }}
         </router-link>
 
         <div class="collapse navbar-collapse" id="navbar">
@@ -23,9 +23,9 @@
           </ul>
           <ul class="navbar-nav">
             <template v-if="authenticated">
-              <router-link :to="{ name: 'settings.profile' }" tag="li" class="nav-item">
-                <a class="nav-link">{{ user.name }}</a>
-              </router-link>
+              <!--<router-link :to="{ name: 'settings.profile' }" tag="li" class="nav-item">-->
+                <!--<a class="nav-link">{{ user.name }}</a>-->
+              <!--</router-link>-->
               <li class="nav-item">
                 <a @click.prevent="logout" class="nav-link" href="#">Logout</a>
               </li>
@@ -34,15 +34,11 @@
               <router-link :to="{ name: 'auth.login' }" tag="li" class="nav-item" active-class="active">
                 <a class="nav-link">Login</a>
               </router-link>
-              <router-link :to="{ name: 'auth.register' }" tag="li" class="nav-item" active-class="active">
-                <a class="nav-link">Register</a>
-              </router-link>
             </template>
           </ul>
         </div>
       </div>
     </nav>
-
     <div class="container">
       <child/>
     </div>
@@ -57,13 +53,12 @@ export default {
     user: 'authUser',
     authenticated: 'authCheck'
   }),
-
+  data: () => ({
+      title: 'VG // Petitions'
+  }),
   methods: {
     logout () {
       this.$store.dispatch('logout')
-        .then(() => {
-          this.$router.push({ name: 'auth.login' })
-        })
     }
   }
 }

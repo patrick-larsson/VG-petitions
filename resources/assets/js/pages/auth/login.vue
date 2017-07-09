@@ -24,20 +24,20 @@
             </div>
 
             <!-- Remember Me -->
-            <div class="form-group row">
-              <div class="col-xs-6 col-sm-4 offset-sm-3">
-                <label class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" value="1" v-model="form.remember">
-                  <span class="custom-control-indicator"></span>
-                  <span class="custom-control-description">Remember Me</span>
-                </label>
-              </div>
-              <div class="col-xs-6 col-sm-3 text-right">
-                <small>
-                  <router-link :to="{ name: 'password.request' }">Forgot Your Password?</router-link>
-                </small>
-              </div>
-            </div>
+            <!--<div class="form-group row">-->
+              <!--<div class="col-xs-6 col-sm-4 offset-sm-3">-->
+                <!--<label class="custom-control custom-checkbox">-->
+                  <!--<input type="checkbox" class="custom-control-input" value="1" v-model="form.remember">-->
+                  <!--<span class="custom-control-indicator"></span>-->
+                  <!--<span class="custom-control-description">Remember Me</span>-->
+                <!--</label>-->
+              <!--</div>-->
+              <!--<div class="col-xs-6 col-sm-3 text-right">-->
+                <!--<small>-->
+                  <!--<router-link :to="{ name: 'password.request' }">Forgot Your Password?</router-link>-->
+                <!--</small>-->
+              <!--</div>-->
+            <!--</div>-->
 
             <!-- Submit Button -->
             <div class="form-group row">
