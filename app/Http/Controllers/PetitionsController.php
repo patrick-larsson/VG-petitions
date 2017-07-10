@@ -57,7 +57,7 @@ class PetitionsController extends Controller
             'last_name' => $request->lastName,
             'email' => $request->email,
             'gender' => $request->gender
-        ]);
+        ])->toArray();
 
         if ($petitionEntry) {
             return response()->json( Auth::check() ?  $petitionEntry : array_only($petitionEntry, ['first_name', 'last_name']));
