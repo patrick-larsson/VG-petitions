@@ -38,7 +38,7 @@ class PetitionsController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'petition' => 'required',
-            'email' => 'required|unique:petitions_entries|email',
+            'email' => 'required|email',
             'firstName' => 'required|alpha',
             'lastName' => 'required|alpha',
             'gender' => 'required',
@@ -57,9 +57,7 @@ class PetitionsController extends Controller
             'last_name' => $request->lastName,
             'email' => $request->email,
             'gender' => $request->gender
-        ])->toArray();
-
-//        Auth::check() ?: $query->addSelect('petition_id', 'first_name', 'last_name');
+        ]);
 
         if ($petitionEntry) {
             return response()->json( Auth::check() ?  $petitionEntry : array_only($petitionEntry, ['first_name', 'last_name']));
